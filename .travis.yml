@@ -4,6 +4,5 @@ language: bash
 
 jobs:
   include:
-    - name: "Test log scan for commit hash..."
-      script:
+    - script:
         - echo "GitHub commit hash: f3a1c4ab84b47e8d43d45a33b6c343097bd4d2f6"
