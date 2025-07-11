@@ -2,6 +2,8 @@ os: linux
 dist: focal
 language: bash
 
-script:
-  - echo "Test log scan for commit hash..."
-  - echo "GitHub commit hash: f3a1c4ab84b47e8d43d45a33b6c343097bd4d2f6"
+jobs:
+  include:
+    - name: "Test log scan for commit hash..."
+      script:
+        - echo "GitHub commit hash: f3a1c4ab84b47e8d43d45a33b6c343097bd4d2f6"
