@@ -1,9 +1,12 @@
+# vm:
+#   use:
+#     name: oksanaTest3-i3
+
 language: bash
 
-vm:
-  use:
-    name: oksanaTest3-i3
-
-script:
-  - echo "Test log scan for commit hash..."
-  - echo "GitHub commit hash: $(git rev-parse HEAD)"
+jobs:
+  include:
+    - stage: Test log scan for commit hash
+      script:
+        - echo "Simulating build step..."
+        - echo "GitHub commit hash: $(git rev-parse HEAD)"
