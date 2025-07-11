@@ -1,8 +1,7 @@
+os: linux
+dist: focal
 language: bash
 
-jobs:
-  include:
-    - stage: Test log scan for commit hash
-      script:
-        - echo "Simulating build step..."
-        - echo "GitHub commit hash: f3a1c4ab84b47e8d43d45a33b6c343097bd4d2f6"
+script:
+  - echo "Test log scan for commit hash..."
+  - echo "GitHub commit hash: f3a1c4ab84b47e8d43d45a33b6c343097bd4d2f6"
