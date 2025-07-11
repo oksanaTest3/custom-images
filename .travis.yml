@@ -5,4 +5,4 @@ language: bash
 jobs:
   include:
     - script:
-        - echo "GitHub commit hash: $(git rev-parse HEAD)"
+        - echo "$(git rev-parse HEAD)"
